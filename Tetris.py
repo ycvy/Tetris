@@ -41,7 +41,7 @@ class TetrisSpiel:
         pygame.display.set_caption('Tetris')
         
         # Font initialisieren
-        self.font = pygame.font.Font(None, 48)
+        self.font = pygame.font.Font(None, 36)
         
         # Tetrominos definieren
         self.TETROMINOS = {
@@ -180,7 +180,7 @@ class TetrisSpiel:
         
         # Seitenbereich für Score und Vorschau
         sidebar_x = SPIELFELD_BREITE * BLOCKGROESSE + 20
-        sidebar_width = 200
+        sidebar_width = 250  # Sidebar verbreitern
         sidebar_height = 400
         
         # Sidebar-Hintergrundfarbe ändern (z.B. hellblau)
